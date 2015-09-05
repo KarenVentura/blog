@@ -87,8 +87,8 @@ class Welcome extends CI_Controller {
       $contenido = $this->input->post('contenido_post');
       $this->blog_model->editando_post($id_post,$titulo,$contenido);
       $msj='El Post Se Ha Actualizado Correctamente';
-	  $msj=array('msj'=>$msj);
-	  $this->load->view('menu',$msj);
+	    $msj=array('msj'=>$msj);
+	    $this->load->view('menu',$msj);
     }
 
 /**********************************************************/
