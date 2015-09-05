@@ -6,10 +6,12 @@
 </head>
 <body>
   <form action="index.php/welcome/login" method="post">
-  	<input type="text" placeholder="Usuario" name="usuario"><br>
-	<input type="password" placeholder="Contraseña" name="password"><br>
-	<input type="submit" value="Login">
-	<input type="button" value="Regresar" onclick='location="../"'>
+    <input type="text" placeholder="Usuario" name="usuario"><br>
+    <input type="password" placeholder="Contraseña" name="password"><br>
+    <input type="submit" value="Login">
+  </form>
+  <form action="index.php/welcome/index">
+  	<input type="submit" value="Regresar">
   </form>
 </body>
 </html>

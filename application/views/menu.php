@@ -1,31 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+  <meta charset="UTF-8">
+  <base href="<?php echo base_url(); ?>"></base>
 </head>
 <body>
+  <?php if(isset($msj) )
+    { 
+      echo "<script type='text/javascript'> alert('".$msj."'); </script>";
+    } 
+
+   ?>
   <table>
   	<tr>
   	  <td>
-  	    <form action="agrega_post" method="post">
+  	    <form action="index.php/welcome/agrega_post" method="post">
   	  	  <button type="sumbit">Agrega un nuevo post</button>
   	  	</form>
   	  </td>
   	  <td>
-  	   <form action="edita_post" method="post">
-  	     <button type="sumbit">Edita un post Post</button>
+  	   <form action="index.php/welcome/edita_post" method="post">
+  	     <button type="sumbit">Edita un Post</button>
   	   </form>
   	  </td>
-  	  <td>
-  	    <form action="actualiza_post" method="post">
-  	      <button type="sumbit">Actualiza un post</button>
-  	     </form>
-  	  </td>
-  	  <td>
-  	    <form action="elimina_post" method="post">
+      <td>
+  	    <form action="index.php/welcome/elimina_post" method="post">
   	      <button type="sumbit">Elimina un Post</button>
   	    </form>
   	  </td>
+      <td>
+        <form action="index.php/welcome/index" method="post">
+          <button type="sumbit">Ver Post</button>
+        </form>
+      </td>
+      <td>
+        <form action="index.php/welcome/destruye_sesion" method="post">
+          <button type="sumbit">Salir de la sesion</button>
+        </form>
+      </td>
   	</tr>
   </table>
 </body>
