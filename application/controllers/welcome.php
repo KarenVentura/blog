@@ -23,8 +23,32 @@ class Welcome extends CI_Controller {
 		$nombre = $this->input->post('usuario');
         $contraseña = $this->input->post('password');
         $res = $this->blog_model->valida_usuario($nombre,$contraseña);
+          
+        if(!empty( $res)){
+		  $this->load->view('menu');
+		}else{
+		  $this->index();
+		}
+	}
 
-        $this->load->view('menu');
+	public function agrega_post()
+	{
+		$this->load->view('agrega_post');
+	}
+
+	public function edita_post()
+	{
+		$this->load->view('edita_post');
+	}
+
+	public function actualiza_post()
+	{
+		$this->load->view('actualiza_post');
+	}
+
+	public function elimina_post()
+	{
+		$this->load->view('elimina_post');
 	}
 }
 
