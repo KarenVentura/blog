@@ -13,6 +13,19 @@ class Welcome extends CI_Controller {
 		$this->load->view('bienvenida');
 	}
 
+	public function capturar_datos()
+	{
+		$this->load->view('capturar_datos');
+	}
+
+	public function login()
+	{
+		$nombre = $this->input->post('usuario');
+        $contraseña = $this->input->post('password');
+        $res = $this->blog_model->valida_usuario($nombre,$contraseña);
+
+        $this->load->view('menu');
+	}
 }
 
 /* End of file welcome.php */
