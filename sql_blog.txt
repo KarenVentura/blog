@@ -1,0 +1,25 @@
+CREATE DATABASE blog;
+USE blog;
+
+CREATE TABLE usuario(
+	id_usuario 	INT NOT NULL AUTO_INCREMENT,
+	nombre 		VARCHAR(20) NOT NULL,
+	apellido 	VARCHAR(20) NOT NULL,
+	password 	VARCHAR(25) NOT NULL,
+	telefono 	VARCHAR(15) NOT NULL,
+	correo  	VARCHAR(30),
+	carrera 	VARCHAR(50) NOT NULL,
+        hobbies 	VARCHAR(200) NOT NULL,
+        intereses_p 	VARCHAR(200) NOT NULL,
+	CONSTRAINT pkusuario PRIMARY KEY(id_usuario)
+);
+ 
+
+CREATE TABLE post(
+	id_post 	INT AUTO_INCREMENT,
+	fkid_usuario  	INT NOT NULL,
+	titulo		VARCHAR(100) NOT NULL,
+	contenido 	VARCHAR(20) NOT NULL,
+	CONSTRAINT pkpost PRIMARY KEY(id_post),
+	CONSTRAINT fkpost_usuario FOREIGN KEY(fkid_usuario) REFERENCES usuario(id_usuario)
+);
