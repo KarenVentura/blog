@@ -1,0 +1,92 @@
+{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-image: url('../Imagen/Fondo Inicial.jpg');
+  background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#inicio{
+  background:rgba(0, 0, 0, 0.6);
+  /*margin: 20%,20%,20%,20%;*/
+    position: absolute;
+    /*nos posicionamos en el centro del navegador*/
+    top:50%;
+    left:50%;
+    /*determinamos una anchura*/
+    width:95%;
+    /*indicamos que el margen izquierdo, es la mitad de la anchura*/
+    margin-left:-47.5%;
+    /*determinamos una altura*/
+    height:95%;
+    /*indicamos que el margen superior, es la mitad de la altura*/
+    margin-top:-23.5%;
+    padding:5px;
+
+}
+#TextB{
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 10%;
+}
+.login{
+  padding-top: 2%;
+
+}
+#TextLogin{
+  color: white;
+  font-size: 18px;
+}
+
+.principal{
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  padding-top: 2%;
+  margin-top: 1%;
+}
+ #Titulo{
+  /*background-color: rgba(242, 214, 123, 0.6);*/
+  color:#F2D57A;
+  font-size: 50px;
+  border-radius: 20px;
+
+ }
+ #Barra{
+  background: black;
+ }
+ .Informacion{
+  height: 460px;
+  padding-top: 20px;
+  color:#F0F1D5;
+  text-align: justify;
+ }
+ #user{
+  width: 60%;
+  height: 40%;
+ }
+ #infousuario{
+  text-align: center;
+ }
+ bl{
+  font-weight: bold;
+  font-size: 15px;
+ }
+ .sing{
+  text-align: right;
+ }
+ .texto{
+  color: white;
+  font-size: 25px;
+ }
+.icon{
+  color: white;
+}
+.lista{
+  color: white;
+  font-size: 15px;
+}
